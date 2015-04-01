@@ -5,4 +5,6 @@
 
 <struts>
 	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<!-- 设置上传文件的大小 -->
+	<constant name="struts.multipart.maxSize" value="2147483648"/><!-- 文件最大为2G -->
 </struts>
