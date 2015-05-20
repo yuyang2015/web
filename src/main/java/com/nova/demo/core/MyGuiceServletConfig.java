@@ -8,6 +8,7 @@ import com.google.inject.Singleton;
 import com.google.inject.servlet.GuiceServletContextListener;
 import com.google.inject.servlet.ServletModule;
 import com.google.inject.struts2.Struts2GuicePluginModule;
+import com.nova.demo.servlet.UserServlet;
 
 public class MyGuiceServletConfig extends GuiceServletContextListener {
 
@@ -24,6 +25,8 @@ public class MyGuiceServletConfig extends GuiceServletContextListener {
 								Singleton.class);
 						filter("/*").through(
 								StrutsPrepareAndExecuteFilter.class);
+						// 绑定servlet,注意需要在stuts.xml配置struts自身的拦截的请求为action,排除拦截servlet
+						this.serve("/userServlet").with(UserServlet.class);
 					}
 
 				});

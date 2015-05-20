@@ -9,7 +9,7 @@
 	
 	<body>
 		<p>大家好！</p>
-		<a href="userServlet?action=login_input">去登录--servlet</a><br />
+		<a href="userServlet?type=login_input">去登录--servlet</a><br />
 		<a href="user!loginInput">去登录--struts2</a><br />
 		<a href="user!loginInput">去登录--struts2-convention</a>
 	</body>

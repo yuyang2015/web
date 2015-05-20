@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.inject.Singleton;
+
+@Singleton
 @WebServlet("/userServlet")
 public class UserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -26,14 +29,13 @@ public class UserServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html;charset=utf-8");
 
-		String action = request.getParameter("action");
-		if ("login_input".equals(action)) {
+		String type = request.getParameter("type");
+		if ("login_input".equals(type)) {
 			request.getRequestDispatcher("login.jsp")
 					.forward(request, response);
-		} else if ("login".equals(action)) {
+		} else if ("login".equals(type)) {
 			String name = request.getParameter("name");
 			String password = request.getParameter("password");
-
 			System.out.println("name->" + name + ",password->" + password);
 		}
 	}
