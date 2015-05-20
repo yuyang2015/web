@@ -10,8 +10,8 @@
 	<body>
 		<p>大家好！</p>
 		<a href="userServlet?type=login_input">去登录--servlet</a><br />
-		<a href="user!loginInput">去登录--struts2</a><br />
-		<a href="user!loginInput">去登录--struts2-convention</a>
+		<a href="user!loginInput.action">去登录--struts2</a><br />
+		<a href="user!loginInput.action">去登录--struts2-convention</a>
 	</body>
 </html>
 
