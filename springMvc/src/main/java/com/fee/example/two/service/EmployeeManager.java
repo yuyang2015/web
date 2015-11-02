@@ -1,0 +1,1 @@
+package com.fee.example.two.service;import java.util.List;import com.fee.example.two.bean.Employee;public interface EmployeeManager {	public List<Employee> getAllEmployees();}

@@ -1,0 +1,1 @@
+package com.fee.example.two.dao;import java.util.List;import com.fee.example.two.bean.Employee;public interface EmployeeDAO {	public List<Employee> getAllEmployees();}
