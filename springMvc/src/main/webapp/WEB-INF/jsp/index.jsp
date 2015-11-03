@@ -3,7 +3,7 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <body>
-	<h3>重定向页面</h3>
+	<h6>1、重定向页面</h6>
 	<form:form method="GET" action="/springMvc/redirect">
 		<table>
 			<tr>
@@ -12,7 +12,7 @@
 		</table>
 	</form:form>
 	<br>
-	<h3>调用静态页面</h3>
+	<h6>2、调用静态页面</h6>
 	<form:form method="GET" action="/springMvc/htmlPage">
 		<table>
 			<tr>
@@ -20,5 +20,10 @@
 			</tr>
 		</table>
 	</form:form>
+	<br>
+	<h6>3、Hello SpringMvc</h6>
+	<a href="/springMvc/hello">sayHello</a>
+	<h6>4、Say Hello To Tom</h6>
+	<a href="/springMvc/rest/sayHello/Tom">Say Hello To Tom</a>
 </body>
 </html>
